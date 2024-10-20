@@ -70,7 +70,7 @@ public class TeacherRegisterController implements Initializable {
         }else{
 
             try {
-                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attd_mng_sys","root","");
+                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/java_attendance","root","");
                 String query = "INSERT INTO teacher(`Name`, `Password`,`PID`)" +
                         "VALUES ('%s','%s','%s')";
                 con.createStatement().executeUpdate(

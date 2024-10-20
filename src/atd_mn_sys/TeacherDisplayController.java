@@ -100,7 +100,7 @@ public class TeacherDisplayController implements Initializable {
                 
                 int pcount = 0;
                 int acount = 0;
-                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attd_mng_sys","root",""); 
+                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/java_attendance","root",""); 
                 Statement stmt = con.createStatement();
                 String query = "SELECT * FROM attendance";
 

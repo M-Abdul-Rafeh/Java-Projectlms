@@ -76,7 +76,7 @@ public class InsertController implements Initializable {
                }
                else{
                //Class.forName("com.mysql.jdbc.Driver");  
-                    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attd_mng_sys","root","");
+                    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/java_attendance","root","");
                     Statement stmt=con.createStatement(); 
                     String sql1 = "select * from student where Name='"+name+"';";
                     System.out.println(sql1);

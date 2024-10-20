@@ -73,7 +73,7 @@ public class LoginController implements Initializable {
             status.setText("Password cannot be empty");
         }else {
             try {
-                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/attd_mng_sys","root","");
+                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/java_attendance","root","");
                 Statement stmt = con.createStatement();
                 String query = "SELECT * FROM student WHERE" +
                         " PID  = '%s' AND Password = '%s'";
